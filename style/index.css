@@ -1,3 +1,80 @@
-body{
-    background-color: red;
+html{
+    background-image: linear-gradient(135deg, #330867 0%, #764ba2 100%);
+    background-repeat: no-repeat;
 }
+
+.nav-bar{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+
+    padding: 1rem 10rem;
+}
+
+button, button::after{
+    font-family: 'Spartan', sans-serif;
+    font-size: 1rem;
+    color: white;
+
+    padding: 1rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: #0652DD;
+
+    background-image: linear-gradient(to left, #6a11cb 0%, #764ba2 100%);
+
+    margin: 2rem;
+    transition: ease 0.3s;
+}
+
+button:hover{
+    font-size: 1.02rem;
+    border-color: #9b59b6;
+    transition: ease 0.3s;
+}
+
+.welcome-mensage{
+    margin: 12rem 9rem 20rem;
+    font-size: 2.3rem;
+}
+
+.home-about{
+    margin: 4rem;
+    padding: 3.5rem;
+    background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+    border-radius: 1rem;
+}
+
+.home-about h3{
+    font-size: 1.5rem;
+}
+
+.home-about div{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.home-about img{
+    border-radius: 1rem;
+}
+
+.home-about p{
+    padding-right: 5rem;
+}
+
+.knowledges{
+    margin: 4rem;
+    padding: 3.5rem;
+    background-image: linear-gradient(to bottom, #cc208e 0%, #6713d2 100%);
+    border-radius: 1rem;
+}
+
+.knowledges-table{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;  
+
+    text-align: center;
+}
+
