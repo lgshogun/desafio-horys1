@@ -1,0 +1,31 @@
+.nav-bar{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    
+    padding: 1rem 10rem;
+}
+
+.nav-bar a, a::after{
+    font-family: 'Spartan', sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+
+    padding: 1rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: #0652DD;
+
+    background-color: #0652DD;
+
+    margin: 2rem;
+    transition: ease 0.3s;
+}
+
+.nav-bar a:hover{
+    background-color: #1B1464;
+    font-size: 1.02rem;
+    border-color: #1B1464;
+    transition: ease 0.3s;
+}

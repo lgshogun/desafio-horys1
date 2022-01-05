@@ -1,0 +1,44 @@
+.contacts{
+    margin: 4rem;
+    padding: 3.5rem;
+    background-color: #1B1464;
+    border-radius: 1rem;
+}
+
+.contacts img{
+    height: 3rem;
+}
+
+.contacts-icon{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts-icon a{
+    padding: 1rem;
+}
+
+.contacts button, button::after{
+    font-family: 'Spartan', sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+
+    padding: 1rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: #0652DD;
+
+    background-color: #0652DD;
+
+
+    transition: ease 0.3s;
+}
+
+.contacts button:hover{
+    background-color: #1B1464;
+    font-size: 1.02rem;
+    border-color: #1B1464;
+    transition: ease 0.3s;
+}

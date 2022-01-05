@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lauro Gabriel</title>
 
-    <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/settings.css">
+    <link rel="stylesheet" href="./style/nav-bar.css">
+    <link rel="stylesheet" href="./style/home-about.css">
+    <link rel="stylesheet" href="./style/knowledges.css">
+    <link rel="stylesheet" href="./style/contacts.css">
     <script name="js" src="./script/script.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Righteous&family=Spartan:wght@500&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="noselect">
     <div class="nav-bar">
-        <button>Home</button>
-        <button>Conhecimentos</button>
-        <button>Contatos</button>
+        <a href="#home-about">Sobre</a>
+        <a href="#knowledges">Conhecimentos</a>
+        <a href="#contacts">Contatos</a>
     </div>
 
     <h1 class="welcome-mensage">Ola me chamo <strong>Lauro Gabriel</strong>, e seja bem-vindo!</h1>
 
-    <div class="home-about">
+    <div class="home-about" id="home-about">
         <h3>Sobre mim:</h3>
         <div>
             <p>Sou estudante em Web Design. Curso atualmente o ensino medio, mas tambem gosto bastante de programacao fullstack. Estudo em diversos bootcamps, e busco aprimorar cada vez mais minhas habilidades, pois me sinto um eterno aprendiz e preparado para qualquer desafio que sou capaz de fazer no mundo da programacao.</p>
@@ -31,27 +34,47 @@
         </div>
     </div>
 
-    <div class="knowledges">
-        <h3>Conhecimentos</h3>
-        <div class="knowledges-table">
-            <div>
-                <h4>Basico</h4>
-                <p>C++</p>
+    <div class="knowledges" id="knowledges">
+        <h3>Conhecimentos:</h3>
+        <div class="knowledge-div">
+            <div class="text-knowledges">
+                <p>Minhas primeiras interacoes com programacao foi por meio do <strong>Html e Css</strong>, fazendo paginas basicas por meio do Codecademy, quando tinha apenas 10 anos.</p>
+                <p>Anos depois, comecei a me introduzir na robotica, da qual eu possuia um kit basico que me ajudou e ensinou a mecher com <strong>C++</strong>. Apesar de ter feito bastante coisa (como um ventilador que se movia a partir do calor alto), eu nao tinha conhecimento de logica de programacao, muito menos de criar repositorios no Github.</p>
+                <p>Agora recentemente (2020) me voltei mais para o estudo da programacao de forma mais seria, estudando Logica de Programacao, e depois <strong>JavaScript</strong>, da qual eu gosto muito ate hoje.</p>
+                <p>Logo apos recebi uma mentoria excelente de um programador senior, que me ensinou o uso da linguagem de programacao <strong>Clojure</strong>, com boas praticas de Scrum, e uso do Clickup para task e entre outros. Dentro do Clojure, eu utilizei a biblioteca do Fulcro, para uso fullstack, gerenciando jsons e criando paginas de login, junto ao <strong>H2 Database</strong>, que usa o gerenciamento de dados na memoria do pc, ao inves de usar no HD.</p>
             </div>
-            <div>
-                <h4>Intermediario</h4>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JS</p>
-                <p>Clojure</p>
-            </div>
-
-            <div>
-                <h4>SQL</h4>
-                <p>H2 Database</p>
+            <div class="knowledges-table">
+                <div>
+    
+                    <h4>Basico</h4>
+                    <p><img src="https://www.alura.com.br/artigos/assets/formacao-linguagem-c-plus-plus/img-01.png" alt="C++"></p>
+                </div>
+    
+                <div>
+    
+                    <h4>Intermediario</h4>
+                    <p><img src="https://miro.medium.com/max/1024/1*QjuXtByLQg0o6E-bB6Uw7A.png" alt="HTML, CSS, JS"></p>
+                    <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/800px-Clojure_logo.svg.png" alt="Clojure"></p>
+    
+                </div>
             </div>
         </div>
 
+    </div>
+
+    <div class="contacts" id="contacts">
+        <h3>Contatos:</h3>
+        <div class="contacts-icon">
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github"></a>
+            
+            <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Instagram-Icon.png" alt="Instagram"></a>
+            
+            <a href=""><img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-4-1.png" alt="Discord"></a>
+            
+            <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1024px-Telegram_logo.svg.png" alt="Telegram"></a>
+        </div>
+
+        <button onclick="sendemail()">Mande um Email!</button>
     </div>
 </body>
 </html>

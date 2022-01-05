@@ -1,0 +1,48 @@
+.knowledges{
+    margin: 4rem;
+    padding: 3.5rem;
+    background-color: #1B1464;
+    border-radius: 1rem;
+}
+
+.knowledge-div{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.knowledges-table{
+    align-items: center;
+    justify-content: center;
+    display: flex;  
+    flex-direction: column;
+
+    text-align: center;
+    width: 50%;
+}
+
+.knowledges-table div{
+    padding: 2rem 5rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background-color: #341f97;
+    margin: 1rem 0;
+}
+
+.knowledges-table h4{
+    height:  3rem;
+}
+
+.knowledges-table img{
+    height: 6rem;
+}
+
+.text-knowledges{
+    width: 50%;
+
+}
+
+.text-knowledges p{
+    padding: 0.5rem
+}
+
