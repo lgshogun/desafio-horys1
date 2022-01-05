@@ -42,3 +42,13 @@
     border-color: #1B1464;
     transition: ease 0.3s;
 }
+
+.contacts input{
+    content: "Some";
+
+    margin: 1rem 0;
+    font-size: 1rem;
+    height: 2rem;
+    background-color:#0652DD;
+    border-radius: 3px;
+}
