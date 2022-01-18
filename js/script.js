@@ -13,8 +13,7 @@ function append(parent, el) {
 }
 
 const aboutbox = document.getElementById('about');
-const knowledgebox = document.getElementById('text-knowledges');
-
+const imgdelete = document.getElementById('imgdelete');
 const url = 'http://localhost:8080/api/v1/web';
 
 fetch(url)
@@ -30,10 +29,21 @@ fetch(url)
 
     append(aboutbox, p);
     append(aboutbox, img);
-    
   } )
 })
 .catch(function(error) {
   console.log(error);
 });
 
+fetch(url)
+.then((resp) => resp.json())
+.then(function(data) {
+  let contents = data.content.img
+  return contents.map(function(content) {
+
+    imgdelete.innerHTML = `${content.text}`;
+  } )
+})
+.catch(function(error) {
+  console.log(error);
+});
